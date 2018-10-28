@@ -1,8 +1,12 @@
 sudo: false
 language: ruby
+cache: bundler
 rvm:
   - 2.5.1
 before_install: gem install bundler -v 1.16.2
+notifications:
+  slack:
+    secure: "v21Q/54mMF2CEor8tNxLWVT64z3rV95Q2wbNI3+VDdnsFWbSanVK8gRj0sQGXViLdj97VJYBpnCRgR2G5MvjDB0cHQp9CfBQlhNurwcxU3W2vyeKU/o1YOWH9pBrWEFIOwwh2pQX6n9H2f+sBG7zYjJrtyXdlc4sqb0bak6yDaKP7DC84p5YjFyenhy4WOleQzzGgKpa6uKoVx/W9ZE0ZgMSwr4QfAdtuFdkepye+J3JcDNntVkxnvU7A6RquGtwLxfVgfcSxAqMsfwKemlhAlNGdocpsHKdBGfDlFHQYiktt6CdgA5RFKupYrKkMRWJUwJgW3MdCE03NNSFzeVEXCMwkgDD0x65j7HH1DtnUfduq/PfsgRG3hukkeQ1uOIwzQ3hSVvI9YN0rd25VOCT4+16oGiiynUX54KJGHcVr1Gme9+GbnDIUX48hLUvlzNKgd4gRdCIrb/bu3lc3bTc0PjU03PvPXy3rXsAV1CJb0iwaq97KfCHYEtGYnvQ91tZPCUr8gnmawSgugMr2Nv8hFNM/JL21W+xkosvkhSd1fscAtSEDW6ELBd/NgyYoIJOKBZZxjJ1/kWd2nS60XCaLn5VEcIQNS9aNoeDqPPkRF6aeN/KzEtFWNO2NwiXl4N5pBlQqt2gCRmDNtjadrHWI0QaTgSwF2DGSg/Dt80Fijw="
 deploy:
   provider: rubygems
   gem: monban-repository
