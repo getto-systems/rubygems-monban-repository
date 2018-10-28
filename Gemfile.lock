@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    monban-repository (0.1.0)
+    monban-repository (0.1.1)
       getto-initialize_with (~> 1.0)
       getto-repository-sequel (~> 1.0)
 
