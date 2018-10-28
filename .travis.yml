@@ -1,0 +1,12 @@
+sudo: false
+language: ruby
+rvm:
+  - 2.5.1
+before_install: gem install bundler -v 1.16.2
+deploy:
+  provider: rubygems
+  gem: monban-repository
+  on:
+    tags: true
+  api_key:
+    secure: "wn/tjgSUCGLm2xXcb/NMJdyqtGzCIqQ76WFaMGoVwOYUghXIa0Q8ukFM8zK/BC7QOSzbKwfWwy9AznvXip7qC4vQnE1vlJZSZO6BQa7eEyNGcJ9nm6SJNygiHj3pgqx7nqgFbR9nqROdQkjKvz19yip5j/zAeLgKMSPLgB3nki1K2BUufXaXBK3OQfKEFUY2grTPwoGWpREgcnOFmmTtTpWB8+EoZUdEE05xLbSSsRMkolzDI3AykiVDv/geBMJ9Jrn9aLi9n/l4zCxNnfVLJKEm6HQBuVTNvT/DkLfim/HXJIQ69MbaCd2zKV8v0XUyiTzJTusmlIjPWURZHCLy81U04GX+Uyrmtj64P9buj4i35JsXLEGWvql3JyTkeGrKAZ2ufs5x0l0oF7l0NlpK4aySNumhrbIg0K9pHjgGWksmkIaejIiN30CluPag89KT5ASyxmoq+1sTN0NX+ozTp8+0ODso+hVY95KfCanF9++IHxlMyQPc7jhWq6+uiyg2aHsBaWfuPd3TtuIccHXOWCBbtJ0/AELjxX0WCAsnYAPTk3dczfeIIccr3Zr70vSLui7UCKKEmF6at+HioD+pGxz/g+cUWSQoIC25l3/F4ZY8sv8p2TqEWOj7DlIp3Ot4TgjRWjKWBzqTLVWhzKAJqhxYz8LaloVYpMyJ9G5hWqo="
