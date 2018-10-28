@@ -2,7 +2,7 @@
 
 [rubygems: monban-repository](https://rubygems.org/gems/monban-repository)
 
-[Monban](https://github.com/getto-systems/rubygems-monban-repository)
+[Monban](https://github.com/getto-systems/rubygems-monban-repository) - repository implementation
 
 
 ###### Table of Contents
