@@ -10,8 +10,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["shun@getto.systems"]
   spec.email         = ["shun@getto.systems"]
 
-  spec.summary       = %q{paging helper}
-  spec.description   = %q{Repository helpers: Page}
+  spec.summary       = %q{Monban - repository implementation}
+  spec.description   = %q{Monban - repository implementation}
   spec.homepage      = "https://github.com/getto-systems/rubygems-monban-repository"
   spec.license       = "MIT"
 
