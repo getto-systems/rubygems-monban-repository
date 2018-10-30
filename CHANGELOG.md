@@ -1,3 +1,7 @@
+# Version : 1.1.0
+
+add: auth.login_type
+
 # Version : 1.0.2
 
 fix: travis
