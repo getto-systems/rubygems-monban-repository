@@ -36,6 +36,11 @@ module Monban
             .map{|hash| hash[:login_id]}.first
         end
 
+        def login_type(account_id:)
+          # all account login with 'authy' in this implement
+          "authy"
+        end
+
         def roles(account_id:)
           db[:account_roles]
             .where(account_id: account_id)
