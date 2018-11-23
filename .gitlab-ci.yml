@@ -7,6 +7,14 @@ cache:
 test:
   except:
     - tags
+    - master
+    - release
   script:
     - bundle
     - bundle exec rake
+
+release:
+  only:
+    - release@monban/rubygems-repository
+  script:
+    - ./bin/push_tags.sh
