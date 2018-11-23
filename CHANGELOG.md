@@ -1,3 +1,7 @@
+# Version : 1.1.1
+
+fix: variables
+
 # Version : 1.1.0
 
 add: auth.login_type
